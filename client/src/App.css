@@ -1,0 +1,321 @@
+/* Global Styles */
+body {
+  background-color: #e0e0e0; /* Light gray background */
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #4c4c4c; /* Medium gray text */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #7d7d7d; /* Medium gray background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #fff; /* White border for contrast */
+}
+
+nav a {
+  color: #fff; /* White text */
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  background-color: #9e9e9e; /* Lighter gray button */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #7d7d7d; /* Medium gray on hover */
+}
+
+/* Main Page Styles */
+.main-page {
+  background-color: #fff; /* White background */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #7d7d7d; /* Medium gray border */
+}
+
+.main-page h1 {
+  color: #4c4c4c;
+  font-family: 'Arial', sans-serif; /* Sans-serif font */
+}
+
+.main-page p {
+  margin-bottom: 20px;
+  color: #666; /* Slightly darker gray for text */
+}
+
+.main-page button {
+  margin: 5px;
+  background-color: #7d7d7d; /* Medium gray button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-page button:hover {
+  background-color: #9e9e9e; /* Lighter gray on hover */
+}
+
+/* Form Styles */
+.reservation-form, .registration-form, .login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 2px solid #7d7d7d; /* Medium gray border */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #4c4c4c; /* Medium gray text */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #7d7d7d; /* Medium gray border */
+  border-radius: 5px;
+}
+
+button {
+  background-color: #7d7d7d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+  background-color: #9e9e9e;
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #7d7d7d; /* Medium gray border */
+}
+
+.stats {
+  margin-bottom: 20px;
+}
+
+.stats h3 {
+  margin: 5px 0;
+  font-family: 'Arial', sans-serif;
+  color: #4c4c4c;
+}
+
+.order-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-list li {
+  background-color: #e0e0e0; /* Light gray for order items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #7d7d7d; /* Medium gray border */
+}
+
+/* Reservation Table Display */
+.dropzone {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: 2px dashed #7d7d7d;
+  background-color: #e0e0e0;
+  margin-top: 20px;
+}
+
+.table {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7d7d7d;
+  border: 1px solid #9e9e9e;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.table-2 { width: 100px; height: 60px; }
+.table-4 { width: 120px; height: 80px; }
+.table-6 { width: 140px; height: 100px; }
+.table-8 { width: 160px; height: 120px; }
+
+.table.selected { background-color: #b0b0b0; color: #fff; } /* Lighter gray for selected */
+.table.reserved { background-color: #8c8c8c; color: #fff; cursor: not-allowed; } /* Medium gray for reserved */
+
+/* Sidebar Styles */
+.left-sidebar {
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #7d7d7d;
+  background-color: #fff;
+}
+
+.left-sidebar h2 {
+  margin-bottom: 10px;
+  color: #4c4c4c;
+}
+
+.table-option {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #7d7d7d;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a, nav button {
+    margin-bottom: 10px;
+  }
+}
+
+/* Updated Button Styles */
+.location-toggle {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #7d7d7d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.location-toggle:hover {
+  background-color: #9e9e9e;
+}
+
+.reserve-button {
+  padding: 10px 20px;
+  background-color: #7d7d7d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.reserve-button:hover {
+  background-color: #9e9e9e;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #4c4c4c;
+}
+
+.form-label input,
+.form-label select {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #7d7d7d;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Reservation Filter Page */
+.reservation-filter-page {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #7d7d7d; /* Medium gray border */
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 10px;
+  border: 1px solid #7d7d7d;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.reservations-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
