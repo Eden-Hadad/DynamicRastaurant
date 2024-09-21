@@ -1,0 +1,57 @@
+/*ReservationTableDisplay settings*/
+
+.resevation-dropzone-container {
+  border: #fcf6f6 1px solid;
+
+  margin: 0 auto;
+  background-image: url("./images/layoutTable.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  
+  height: 45vh;
+}
+
+.table-item {
+  border: 1px solid #fcfcfc;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+ 
+  padding: 10px;
+  color: #ffffff;
+}
+
+.table-2 {
+  background-image: url("./images/table.jpg");
+  width: 100px;
+  height: 60px;
+}
+.table-4 {
+  background-image: url("./images/table.jpg");
+  width: 120px;
+  height: 80px;
+}
+.table-6 {
+  background-image: url("./images/table.jpg");
+  width: 140px;
+  height: 100px;
+}
+.table-8 {
+  background-image: url("./images/table.jpg");
+  width: 160px;
+  height: 120px;
+}
+
+.table-item.selected {
+  background-blend-mode: hard-light;
+  color: #f7f2f2;
+} /* Lighter gray for selected */
+.table-item.reserved {
+  background-color: #8c8c8c;
+  color: #d48282;
+  cursor: not-allowed;
+} /* Medium gray for reserved */
