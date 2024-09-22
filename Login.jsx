@@ -41,17 +41,18 @@ function Login({ setUser }) {
   return (
     <>
     <div className='login-container'>
+
     <div className="login-form">
       <h2>Login To Your Account</h2>
       {loginError && <p >{loginError}</p>}
       <form onSubmit={handleSubmit} className="form-container">
-        <div className="login-form-group">
+        <div>
           <label>Email:</label>
-          <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+          <input className="login-form-group" type="email" value={email} onChange={e => setEmail(e.target.value)} required />
         </div>
-        <div className="login-form-group">
+        <div >
           <label>Password:</label>
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+          <input className="login-form-group" type="password" value={password} onChange={e => setPassword(e.target.value)} required />
         </div>
         <button className='login-form-button' type="submit">Login</button>
       </form>

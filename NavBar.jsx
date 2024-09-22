@@ -7,12 +7,12 @@ function NavBar({ user, onLogout }) {
     <nav className='navbar'>
       
       <div>
-       <button className='nav-button'>{!user && <Link to="/">Home</Link>}</button> 
-       {user && <Link to="/reservation">Reservations</Link>}
+      {!user && <Link to="/"> <button className='nav-button'>Home</button> </Link>}
+       {user && <Link to="/reservation"> <button className='nav-button'>Reservations</button></Link>}
         {user && user.id === 1 && (
           <>
-            <Link to="/admin" >Admin Panel</Link>
-            <Link to="/reservations-filter">Dashboard</Link> {/* Updated: Only Reservations Filter */}
+            <Link to="/admin" ><button className='nav-button'>Admin Panel</button></Link>
+            <Link to="/reservations-filter" ><button className='nav-button'>Dashboard</button></Link> {/* Updated: Only Reservations Filter */}
           </>
         )}
       </div>

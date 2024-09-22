@@ -42,37 +42,52 @@ const UserReservations = ({ userId }) => {
   };
 
   return (
-    <div className="user-reservation-container">
-      <div className="user-reservation">
+    <>
+      <div className="user-reservation-container">
         <h2 className="user-reservation-h1"> My Reservations</h2>
-        {reservations.length > 0 ? (
-          <div className="user-reservation-item-ontain">
-            {reservations.map((reservation) => (
-              <div
-                key={reservation.reservationId}
-                className="user-reservation-item"
-              >
-                <p className="user-reservation-detail">
-                  Table {reservation.size} | Date and Time:{" "}
-                  {new Date(reservation.date).toLocaleString()} | How Many:{" "}
-                  {reservation.how_many}
-                </p>
-                <button
-                  className="user-reservation-cancel-button"
-                  onClick={() =>
-                    handleCancelReservation(reservation.reservationId)
-                  }
+        <div className="user-reservation">
+          {reservations.length > 0 ? (
+            <div className="user-reservation-item-contain">
+              {reservations.map((reservation) => (
+                <div
+                  key={reservation.reservationId}
+                  className="user-reservation-item"
                 >
-                  Cancel Reservation
-                </button>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p>You have no reservations.</p>
-        )}
+                  <p>
+                    <span className="user-reservation-detail">
+                      Date and Time: {" "}
+                    </span>
+                    <span className="user-reservation-detail">
+                      {new Date(reservation.date).toLocaleString()}
+                    </span>
+
+                    <span className="user-reservation-detail">
+                      {" "}
+                      Table {reservation.size}{" "}
+                    </span>
+                    <span className="user-reservation-detail">
+                      How Many: {reservation.how_many}
+                    </span>
+                  </p>
+                  <button
+                    className="user-reservation-cancel-button"
+                    onClick={() =>
+                      handleCancelReservation(reservation.reservationId)
+                    }
+                  >
+                    Cancel Reservation
+                  </button>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="user-reservation-difault-txt">
+              You have no reservations.
+            </p>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

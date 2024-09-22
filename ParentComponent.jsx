@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RestaurantLeftSidebar from './RestaurantLeftSidebar';
 import TableLayout from './TableLayout';
-import '../App.css';
+import './ReservationTableDisplayAdmin.css';
 
 const ParentComponent = () => {
   const [tables, setTables] = useState([]);
@@ -130,8 +130,8 @@ const ParentComponent = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSaveTables} className="save">
+    <div className='admin-panel-layout'>
+      <form onSubmit={handleSaveTables} className="save-panel-admin">
         <RestaurantLeftSidebar onTableClick={handleTableClick} onLayoutChange={handleLayoutChange} />
         <TableLayout
           selectedTable={selectedTable}
@@ -139,7 +139,7 @@ const ParentComponent = () => {
           onTableMove={handleTableMove}
           onDeleteTable={handleDeleteTable}
         />
-        <button type='submit'>Save Tables</button>
+        <button className='save-layout-button' type='submit'>Save Tables</button>
       </form>
     </div>
   );
