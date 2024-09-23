@@ -27,7 +27,7 @@
   padding: 20px;
   
   position: absolute;
-  margin-bottom: -70px;
+  margin-bottom: -50px;
 }
 
 .table-option {
@@ -88,9 +88,10 @@
   background-color: #bd2f2f;
   color: #fcf6f6;
   padding: 10px 20px;
-margin: auto;
+
   width: 10%;
-        top:70%;
+
+       margin-top: 50vh;
         left: 50%;
         border-radius: 30px;
 
@@ -100,6 +101,9 @@ margin: auto;
   
   
  
+}
+.save-layout-button:hover{
+  background-color: #fd6b6b;
 }
 .table-option:hover {
   background-color: #cac8c8;

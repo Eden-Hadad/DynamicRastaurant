@@ -61,14 +61,7 @@ const TableLayout = ({ tables, onTableMove, onDeleteTable }) => {
     <div className='dropzone-container'>
     <div
       className="dropzone-item"
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: '70vh',
-        
-        
-       
-      }}
+      
       onDragOver={handleDragOver}
       onDrop={handleDrop}
     >
